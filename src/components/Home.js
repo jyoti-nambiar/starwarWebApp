@@ -7,7 +7,7 @@ function Home() {
 style={{ 
     
 position:"relative",
-  backgroundImage: "url(" + "/starwar3.jpg" + ")",
+  backgroundImage: `url("/starwar3.jpg")`,
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
@@ -17,7 +17,7 @@ position:"relative",
 >
     <img src="./coollogo.png" alt="" style={{ position:"absolute" }}
     />
-   <Link className="animate-bounce text-2xl"style={{ color:"white",position:"absolute",top:"20rem", left:"25rem"
+   <Link className="animate-bounce text-2xl" style={{ color:"white",position:"absolute",top:"20rem", left:"25rem"
    }} to="/Product">Click here to view StarWar Characters</Link>
 
         </div>

@@ -10,15 +10,15 @@ pageNumbers.push(i);
 }
     return (
 
-        <div class="bg-gray-800 px-4 py-3 flex items-center justify-between  sm:px-6 ">
+        <div className="bg-gray-800 px-4 py-3 flex items-center justify-between  sm:px-6 ">
  
   
-      <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+      <nav className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
        
        
 {pageNumbers.map(number=>{return(
 
-        <Link   onClick={()=>paginate(number)} href="#" aria-current="page" class="z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+        <Link to="#"  key={number}  onClick={()=>paginate(number)} href="#" aria-current="page" className="z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
           {number}
         </Link>
         
