@@ -27,7 +27,7 @@ async function getData() {
        const data = res.data;
         
        const totalCount=res.data.count;
-       url = data.next;
+       url = (data.next)&&(data.next).replace('http','https');
        results.push(...data.results);
        setTotalPost(totalCount);
       
