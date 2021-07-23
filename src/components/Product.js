@@ -22,20 +22,23 @@ async function getData() {
      const results = [];
      let url = 'https://swapi.dev/api/people/';
 //loop until all data is collected
+
      do {
-       const res = await axios.get(url);
+      const res = await axios.get(url);
        const data = res.data;
-        
+      console.log(data);
        const totalCount=res.data.count;
-       url = data.next;
+       url = (data.next)
+       console.log(url);
        results.push(...data.results);
        setTotalPost(totalCount);
-      
+       setdataFromApi(results);
+  
      } while(url)
-setdataFromApi(results);
 
-   console.log(results);
-   setLoading(false);
+
+   //console.log(results);
+   setLoading(false); 
  }
 
 getData();
