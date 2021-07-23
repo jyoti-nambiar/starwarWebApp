@@ -29,8 +29,7 @@ async function getData() {
       console.log(data);
        const totalCount=res.data.count;
        url = (data.next)
-       console.log(url);
-       results.push(...data.results);
+      results.push(...data.results);
        setTotalPost(totalCount);
        setdataFromApi(results);
   

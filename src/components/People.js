@@ -13,7 +13,7 @@ function People({name, height, haircolor, eyecolor, gender, additionalData, more
     
     
 if(loading){
-return(<h2>loading...</h2>)
+return(<h2 className="text-white">loading...</h2>)
 
 }
 
